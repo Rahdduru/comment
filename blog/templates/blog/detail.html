@@ -1,0 +1,14 @@
+{% extends 'blog/layout.html' %}
+
+{% block content %}
+
+<div class="alert alert-warning" role="alert">
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input class="btn btn-warning" type="submit" value="Submit">
+    </form>
+</div>
+
+{% endblock %}
